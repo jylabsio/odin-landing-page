@@ -1,105 +1,5 @@
 /* This is CSS */
 
-* {
-
-box-sizing: border-box;
-
-}
-
-
-
-body {
-
-font-family: "Courier New", monospace;
-background-color: rgb(238, 241, 241);
-color: rgb(80, 80, 80);
-
-
-  margin: 0 auto;      /* centers content horizontally */
-  padding: 0 20px;     /* space from edges on small screens */
-
-
-
-
-}
-
-
-.container {
-
-max-width: 1000px;   /* centers content horizontally */
-margin: auto;  
-
-}
-
-
-
-
-/* Header*/
-
-
-
-header {
-
-background-color: rgb(255, 255, 255);
-display: flex;
-  align-items: center;
-  gap: 25px; /* 40px space between all flex items */
-  padding: 50px;
-
-
-
-
-}
-
-
-
-.nav {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-shrink: auto;
-  gap: 15px;
-  margin-left: auto;
-
-
-
-}
-
-
-
-
-button {
-
-
-background-color: rgb(240, 240, 240);
-border: none;
-border-radius: 12px;
-padding: 5px 10px;
-color: rgb(62, 62, 62);
-font-family: "Courier New", monospace;
-text-decoration: none;
-
-
-
-}
-
-
-
-button:hover {
-
-background-color: rgb(232, 232, 232);
-
-
-
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -108,15 +8,62 @@ background-color: rgb(232, 232, 232);
 
 /* Body*/
 
+body {
+
+  font-family: Roboto, sans-serif;
+  background-color: rgb(255, 255, 255);
+
+  margin: 0;
+  font-weight: 300;
+  margin: 100 auto;
+  /* centers content horizontally */
+
+
+}
+
+
+.main {
+  background-color: #1F2937;
+
+  height: 100vh;
+  /* full viewport height */
+
+}
+
+
+/* Body*/
 
 
 
-main {
 
 
-padding: 20px;    
-background-color: rgb(255, 255, 255);
-  padding: 50px;
+
+
+
+
+
+/* Header*/
+
+
+.headermain{
+
+ padding: 10px 60px;
+  /* change width */
+}
+
+
+.header {
+
+  display: flex;
+
+  flex-direction: row;
+
+  background-color: #1F2937;
+
+  padding: 15px px;
+
+  align-items: center;
+
 
 
 }
@@ -124,27 +71,106 @@ background-color: rgb(255, 255, 255);
 
 
 
-.banner{
+.nav {
 
-display: flex;
-flex-direction: column;
-justify-content: flex-end; /* pushes all children to bottom */
+  display: flex;
 
+  gap: 25px;
 
-background-image: url("../img/hamburger.jpg");
-background-size: cover;
-justify-content: center;
-background-position: center;
+  margin-left: auto;
 
-width: 100%;
-height: 400px;
-padding: 25px;
-
-border-radius: 10px;
+  background-color: ;
 
 
 
+}
 
+
+.nav a {
+
+  display: flex;
+  text-decoration: none;
+  font-size: 14px;
+  color: #E5E7EB;
+  font-weight: 300;
+
+
+}
+
+
+.logo {
+
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #E5E7EB;
+
+
+}
+
+
+/* Header End*/
+
+
+
+
+
+
+/* Hero Banner*/
+
+.herobanner {
+
+  display: flex;
+
+
+  padding: 40px 0px;
+  /* spacing  */
+
+  min-height: 400px;
+
+
+
+}
+
+
+
+.herotext {
+
+  
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+
+  justify-content: center;
+
+  gap: 5px;
+
+  column-gap: 0px;
+
+color: white;
+
+
+
+}
+
+
+.herotext h1 {
+
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  
+
+
+
+
+}
+
+
+.herotext p {
+
+  margin: 0px;
+  padding: 0px;
  
 
 
@@ -153,134 +179,132 @@ border-radius: 10px;
 
 
 
-.bannertext {
 
-margin-top: auto;
-background-color: rgb(247, 247, 247, 0.5) ;
-padding: 20px;
-border-radius: 10px;
+.herotext button {
 
+  display: inline-block;
 
-}
-
-.bannertext h1{
-
-margin: 0;
-
-}
+  align-self: flex-start;
+  /* prevents stretching */
+  width: 100px;
 
 
-.bannertext p{
+  background-color: #3882F6;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border-style: none;
 
-margin: 0;
-
-}
-
-
-
-
-
-
-
-
-
-
-h3 {
-
-color: inherit;
-font-size: 16px;
-
-}
-
-
-
-.title {
-margin: 0;
-font-size: 20px;
-background-color: rgb(255, 255, 255);
 
 
 }
 
 
 
+button:hover {
+  background-color: #3274de;
+}
 
 
-
-.cards-container {
+.heroimg {
   display: flex;
-  flex-wrap: wrap;       /* multiple cards per row */
-  gap: 70px;             /* space between cards */
+  background-color: #303a4a;
+
+  flex: 1;
+  /* take up remaing space*/
+
+  width: 500px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-left: auto;
+
+
+
+
+}
+
+
+
+
+/* Hero Banner Ends*/
+
+
+
+
+
+
+
+
+/* Cards Container*/
+
+
+.cardmain {
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+  align-items: center;
+
+padding-top: 25px;
+padding-bottom: 25px;
+
+}
+
+
+
+
+
+.cardcontainer {
+
+
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+
+  padding-bottom: 25px;
   justify-content: center;
 
 
-margin-top: 50px;
 
-margin-bottom: 50px;
-
-  background-color: rgb(255, 255, 255);
 }
 
-.card {
-   
-  flex: 0 0 auto;        /* do not stretch */
-  border: 1px solid #e4e4e4;
-  border-radius: 12px;
-  padding: 10px;
+
+
+
+
+.cards {
+  display: flex;
+
+  flex-direction: column;
+  flex: 0 1 150px;
+
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  background-color: white;
-  transition: transform 0.2s ease;
+  margin: 0 25px;
 
+  align-items: center;
+
+
+
+}
+
+
+
+.cardimg {
+  display: flex;
   
-}
-
-
-.card img {
-
-width:330px;
-height: 260px;
-object-fit: cover;
-object-position: center;
-
-
-
-
-}
-
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
-
-
- 
-
-
-
-
-
-
-.about {
-
-
-display: flex;
-justify-content: center;
-background-color: rgb(215, 215, 215);
-
-  
-  
-}
-
-
-
-
-.aboutbox1 {
-background-color: rgb(255, 255, 255);
-  
-height: 400px; 
-width: 100%;
+  width: 65px;
+  height: 65px;
+  padding: 25px;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3882F6
 
 
 
@@ -289,61 +313,53 @@ width: 100%;
 }
 
 
-.aboutbox1 img {
 
-width: 100%;          /* fills container width */
-  height: 100%;         /* fills container height */
-  object-fit: cover;    /* scales and crops image to fit container without stretching */
-  object-position: center; /* optional: keeps center of image visible */
-  display: block;       /* removes extra space below image */
-  border-radius: 12px;   /* optional styling */
+.cardmain h1 {
 
-
-
-}
-
-
-
-
-
-
-
-.aboutbox2 {
-  background-color: rgb(255, 255, 255);
-  
-    height: auto;
-
-     width: 100%;
- padding: 45px;
-
-     
-}
-
-
-
-
-.aboutbox2 p {
-margin: 0;
-font-size: 12px;
-
-}
-
-
-.aboutbox2 h4 {
+  display: flex;
   margin: 0;
-margin-bottom: 10px;
+
+
+}
+
+.cardmain p {
+
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+
+
 }
 
 
 
+/* Cards Container Ends*/
 
 
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -356,17 +372,18 @@ margin-bottom: 10px;
 
 
 footer {
-  height: 100px;
+
   margin: 0 auto;
   padding: 25px;
-  padding-left: 50px;
   text-align: center;
-  
+  color: #E5E7EB;
+  background-color: #1F2937;
+
+  font-size: 11px;
+  font-weight: 300;
 
 
 
 
-background-color: rgb(251, 244, 244);
 
 }
-
