@@ -1,5 +1,6 @@
 /* This is CSS */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap');
 
 
 
@@ -47,9 +48,10 @@ body {
 
 .headermain{
 
- padding: 10px 60px;
+ padding: 0px 60px;
   /* change width */
 }
+
 
 
 .header {
@@ -60,7 +62,7 @@ body {
 
   background-color: #1F2937;
 
-  padding: 15px px;
+  padding: 12px 0px;
 
   align-items: center;
 
@@ -79,7 +81,7 @@ body {
 
   margin-left: auto;
 
-  background-color: ;
+
 
 
 
@@ -123,7 +125,7 @@ body {
   display: flex;
 
 
-  padding: 40px 0px;
+  padding: 0px 0px;
   /* spacing  */
 
   min-height: 400px;
@@ -207,21 +209,36 @@ button:hover {
 }
 
 
-.heroimg {
+
+
+.heroimgcontainer {
+
   display: flex;
-  background-color: #303a4a;
+
 
   flex: 1;
   /* take up remaing space*/
 
-  width: 500px;
-  height: auto;
+
+
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   color: white;
   margin-left: auto;
 
+}
 
+
+
+
+.heroimg {
+    display: flex;
+background-color: #6d7282;
+ width: 600px;
+ height: 250px;
+ align-items: center;
+ justify-content: center;
+ 
 
 
 }
@@ -322,6 +339,56 @@ button:hover {
 
 
 
+/* Quote Container */
+
+.quotemain {
+background-color:#E5E7EB;
+
+display: flex;
+flex-wrap: wrap;
+ padding: 60px 60px;
+
+justify-content: center;
+
+  
+}
+
+
+.quotecontainer {
+
+display: flex;
+flex-direction: column;
+max-width: 700px;
+
+
+}
+
+
+.quotetext {
+align-self: end;
+
+margin: 15px 0px;
+font-size: 32px;
+font-style: italic;
+
+background-color: ;
+
+}
+
+
+.quotename{
+
+margin: 0;
+font-size: 18px;
+font-weight: 900;
+text-align: end;
+
+
+
+
+
+
+}
 
 
 
