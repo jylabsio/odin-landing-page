@@ -26,8 +26,7 @@ body {
 .main {
   background-color: #1F2937;
 
-  height: 100vh;
-  /* full viewport height */
+
 
 }
 
@@ -46,9 +45,9 @@ body {
 /* Header*/
 
 
-.headermain{
+.headermain {
 
- padding: 0px 60px;
+  padding: 0px 60px;
   /* change width */
 }
 
@@ -138,7 +137,7 @@ body {
 
 .herotext {
 
-  
+
   display: flex;
   flex-direction: column;
   width: 350px;
@@ -149,7 +148,7 @@ body {
 
   column-gap: 0px;
 
-color: white;
+  color: white;
 
 
 
@@ -161,7 +160,7 @@ color: white;
   margin: 0;
   padding: 0;
   font-size: 35px;
-  
+
 
 
 
@@ -173,7 +172,7 @@ color: white;
 
   margin: 0px;
   padding: 0px;
- 
+
 
 
 }
@@ -232,13 +231,13 @@ button:hover {
 
 
 .heroimg {
-    display: flex;
-background-color: #6d7282;
- width: 600px;
- height: 250px;
- align-items: center;
- justify-content: center;
- 
+  display: flex;
+  background-color: #6d7282;
+  width: 600px;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+
 
 
 }
@@ -263,7 +262,7 @@ background-color: #6d7282;
   background-color: #ffffff;
   padding: 60px 0;
   text-align: center;
-  
+
 
 }
 
@@ -275,10 +274,11 @@ background-color: #6d7282;
 
 
 
- display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px; /* THIS replaces margins */
+  gap: 50px;
+  /* THIS replaces margins */
   padding: 25px;
 
 
@@ -294,7 +294,8 @@ background-color: #6d7282;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 160px; /* predictable card size */
+  width: 160px;
+  /* predictable card size */
   text-align: center;
 
 
@@ -304,9 +305,9 @@ background-color: #6d7282;
 
 
 .cardimg {
- 
-  
-    width: 140px;
+
+
+  width: 140px;
   height: 140px;
   padding: 25px;
   border-radius: 12px;
@@ -321,8 +322,7 @@ background-color: #6d7282;
 
 .cardmain h1 {
   margin: 0 0 16px 0;
-=
-
+  =
 }
 
 .cardmain p {
@@ -337,60 +337,95 @@ background-color: #6d7282;
 
 
 
-
-
 /* Quote Container */
 
 .quotemain {
-background-color:#E5E7EB;
+  background-color: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
 
-display: flex;
-flex-wrap: wrap;
- padding: 60px 60px;
 
-justify-content: center;
-
-  
 }
 
 
 .quotecontainer {
 
-display: flex;
-flex-direction: column;
-max-width: 700px;
-
+  display: flex;
+  max-width: 700px;
+  flex-direction: column;
+  gap: 16px;
 
 }
 
 
 .quotetext {
-align-self: end;
 
-margin: 15px 0px;
-font-size: 32px;
-font-style: italic;
-
-background-color: ;
-
-}
-
-
-.quotename{
-
-margin: 0;
-font-size: 18px;
-font-weight: 900;
-text-align: end;
-
-
-
-
+  margin: 0px;
+  font-size: 32px;
+  font-style: italic;
+  line-height: 1.3;
 
 
 }
 
 
+.quotename {
+
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+
+
+
+
+}
+
+
+
+/* CTA */
+
+
+
+
+
+.ctamain {
+
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 60px 10px;
+
+
+}
+
+
+
+.ctacontainer {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* KEY FIX */
+  background-color: #3882F6;
+  padding: 30px 65px;
+  border-radius: 6px;
+  max-width: 900px;
+  width: 100%;
+
+}
+
+
+
+
+
+.ctatextcontainer {
+
+
+  color: #ffffff;
+  line-height: 1.3;
+}
 
 
 
@@ -398,18 +433,45 @@ text-align: end;
 
 
 
+.ctatitle {
+
+  font-size: 22px;
+  margin: 0;
+
+
+}
+
+
+
+.ctatext {
+
+  font-size: 16px;
+  margin: 4px 0 0;
+
+}
 
 
 
 
+.ctabutton button {
+
+  background-color: transparent;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: 2px solid white;
+  cursor: pointer;
+  font-weight: 600;
+
+
+}
+
+.ctabutton button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 
 
 
-
-
-
-
-
+}
 
 
 
