@@ -36,6 +36,16 @@ body {
 
 
 
+.container {
+
+ max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
 
 
 
@@ -68,6 +78,10 @@ body {
 
 
 }
+
+
+
+
 
 
 
@@ -233,7 +247,7 @@ button:hover {
 .heroimg {
   display: flex;
   background-color: #6d7282;
-  width: 600px;
+  width: 500px;
   height: 250px;
   align-items: center;
   justify-content: center;
